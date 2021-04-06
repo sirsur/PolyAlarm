@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC4449655F4857169BEE098 /* Pods_PolyAlarmApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D838646215CE876A0C7505 /* Pods_PolyAlarmApp.framework */; };
 		91AC95C3261B9545000329DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91AC95C2261B9545000329DC /* Assets.xcassets */; };
 		91AC95C6261B9545000329DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91AC95C5261B9545000329DC /* Preview Assets.xcassets */; };
 		91AC95E5261B96DE000329DC /* CustomBackgroundBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC95E4261B96DE000329DC /* CustomBackgroundBlur.swift */; };
@@ -47,9 +48,13 @@
 		E5CD0B72261B9D2900A9EE92 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD0B6C261B9D2900A9EE92 /* Notification.swift */; };
 		E5CD0B73261B9D2900A9EE92 /* PopUpStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD0B6D261B9D2900A9EE92 /* PopUpStyle.swift */; };
 		E5CD0B74261B9D2900A9EE92 /* UserDefaultAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD0B6E261B9D2900A9EE92 /* UserDefaultAlarm.swift */; };
+		E5CD0B7D261CD2C100A9EE92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5CD0B7C261CD2C100A9EE92 /* GoogleService-Info.plist */; };
+		E5CD0B8D261CD65000A9EE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD0B8C261CD64F00A9EE92 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23E83C56111E242284A65C1A /* Pods-PolyAlarmApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolyAlarmApp.release.xcconfig"; path = "Target Support Files/Pods-PolyAlarmApp/Pods-PolyAlarmApp.release.xcconfig"; sourceTree = "<group>"; };
+		62CBF900BC7273B2429B0B93 /* Pods-PolyAlarmApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolyAlarmApp.debug.xcconfig"; path = "Target Support Files/Pods-PolyAlarmApp/Pods-PolyAlarmApp.debug.xcconfig"; sourceTree = "<group>"; };
 		91AC95BB261B953E000329DC /* PolyAlarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolyAlarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91AC95C2261B9545000329DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91AC95C5261B9545000329DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -92,6 +97,9 @@
 		E5CD0B6C261B9D2900A9EE92 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		E5CD0B6D261B9D2900A9EE92 /* PopUpStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpStyle.swift; sourceTree = "<group>"; };
 		E5CD0B6E261B9D2900A9EE92 /* UserDefaultAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultAlarm.swift; sourceTree = "<group>"; };
+		E5CD0B7C261CD2C100A9EE92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5CD0B8C261CD64F00A9EE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5D838646215CE876A0C7505 /* Pods_PolyAlarmApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PolyAlarmApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +107,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC4449655F4857169BEE098 /* Pods_PolyAlarmApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A99DC7F14BC1BDA9B6AE2AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D838646215CE876A0C7505 /* Pods_PolyAlarmApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6558176A438D01D0ABB43FC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62CBF900BC7273B2429B0B93 /* Pods-PolyAlarmApp.debug.xcconfig */,
+				23E83C56111E242284A65C1A /* Pods-PolyAlarmApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		91AC95B2261B953E000329DC = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +144,8 @@
 				91AC95D6261B9697000329DC /* Data */,
 				91AC9609261B983D000329DC /* Views */,
 				91AC95BC261B953E000329DC /* Products */,
+				6558176A438D01D0ABB43FC3 /* Pods */,
+				0A99DC7F14BC1BDA9B6AE2AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +160,11 @@
 		91AC95BD261B953E000329DC /* PolyAlarmApp */ = {
 			isa = PBXGroup;
 			children = (
+				E5CD0B7C261CD2C100A9EE92 /* GoogleService-Info.plist */,
 				91AC95C2261B9545000329DC /* Assets.xcassets */,
 				91AC95C7261B9545000329DC /* Info.plist */,
 				91AC95C4261B9545000329DC /* Preview Content */,
+				E5CD0B8C261CD64F00A9EE92 /* AppDelegate.swift */,
 			);
 			path = PolyAlarmApp;
 			sourceTree = "<group>";
@@ -304,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91AC95CA261B9545000329DC /* Build configuration list for PBXNativeTarget "PolyAlarmApp" */;
 			buildPhases = (
+				5FEB995A427A0DC1DF1B8673 /* [CP] Check Pods Manifest.lock */,
 				91AC95B7261B953E000329DC /* Sources */,
 				91AC95B8261B953E000329DC /* Frameworks */,
 				91AC95B9261B953E000329DC /* Resources */,
+				067AA88DB67779E6C4944124 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,12 +394,55 @@
 				91AC9605261B97E5000329DC /* beacon.mp3 in Resources */,
 				91AC95C6261B9545000329DC /* Preview Assets.xcassets in Resources */,
 				91AC95C3261B9545000329DC /* Assets.xcassets in Resources */,
+				E5CD0B7D261CD2C100A9EE92 /* GoogleService-Info.plist in Resources */,
 				91AC9603261B97E5000329DC /* chimes.mp3 in Resources */,
 				91AC9606261B97E5000329DC /* electro.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		067AA88DB67779E6C4944124 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PolyAlarmApp/Pods-PolyAlarmApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PolyAlarmApp/Pods-PolyAlarmApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PolyAlarmApp/Pods-PolyAlarmApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FEB995A427A0DC1DF1B8673 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PolyAlarmApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91AC95B7261B953E000329DC /* Sources */ = {
@@ -382,6 +457,7 @@
 				91AC9627261B99EF000329DC /* AlarmAddView.swift in Sources */,
 				91AC9664261C35B7000329DC /* MainPageView.swift in Sources */,
 				91AC9617261B9908000329DC /* CustomBackgroundView.swift in Sources */,
+				E5CD0B8D261CD65000A9EE92 /* AppDelegate.swift in Sources */,
 				91AC95ED261B9719000329DC /* Font+Extensions.swift in Sources */,
 				91AC9621261B99C5000329DC /* AlarmListView.swift in Sources */,
 				91AC9667261C35D9000329DC /* LogInView.swift in Sources */,
@@ -529,6 +605,7 @@
 		};
 		91AC95CB261B9545000329DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CBF900BC7273B2429B0B93 /* Pods-PolyAlarmApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -553,6 +630,7 @@
 		};
 		91AC95CC261B9545000329DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E83C56111E242284A65C1A /* Pods-PolyAlarmApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
