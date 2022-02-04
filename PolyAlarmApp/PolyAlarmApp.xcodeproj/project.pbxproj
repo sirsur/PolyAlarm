@@ -57,6 +57,8 @@
 		91AC9660261BB150000329DC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC965F261BB150000329DC /* CustomTextField.swift */; };
 		91D3449D2626199E008E8303 /* TrustNumberData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3449C2626199E008E8303 /* TrustNumberData.swift */; };
 		91D344A62626240C008E8303 /* TrustNumberEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D344A52626240C008E8303 /* TrustNumberEditView.swift */; };
+		E581C1F326484E1B00D43573 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E581C1F226484E1B00D43573 /* SwiftSoup */; };
+		E581C1F6264853BA00D43573 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581C1F5264853BA00D43573 /* Parsing.swift */; };
 		E583FA62261F09DC00994C83 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583FA61261F09DC00994C83 /* OTPView.swift */; };
 		E5BC87BE261E200F000C91F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5BC87BD261E200F000C91F4 /* GoogleService-Info.plist */; };
 		E5BC87C2261E205E000C91F4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E5BC87C1261E205E000C91F4 /* FirebaseStorage */; };
@@ -145,6 +147,7 @@
 		91AC965F261BB150000329DC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		91D3449C2626199E008E8303 /* TrustNumberData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustNumberData.swift; sourceTree = "<group>"; };
 		91D344A52626240C008E8303 /* TrustNumberEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustNumberEditView.swift; sourceTree = "<group>"; };
+		E581C1F5264853BA00D43573 /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		E583FA61261F09DC00994C83 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		E5BC87BD261E200F000C91F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5CD0B69261B9D2900A9EE92 /* DefaultButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButtonStyle.swift; sourceTree = "<group>"; };
@@ -178,6 +181,7 @@
 				E5BC87C4261E205E000C91F4 /* FirebaseAuth in Frameworks */,
 				E5BC87C8261E205E000C91F4 /* FirebaseDatabase in Frameworks */,
 				E5BC87C6261E205E000C91F4 /* FirebaseFirestore in Frameworks */,
+				E581C1F326484E1B00D43573 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,12 +239,11 @@
 		91AC95B2261B953E000329DC = {
 			isa = PBXGroup;
 			children = (
+				E5107CCC26555FC1007732C5 /* Assets */,
+				E581C1F42648539100D43573 /* Webservice */,
 				91AC963E261B9AD3000329DC /* PolyAlamApp.swift */,
 				91AC95BD261B953E000329DC /* PolyAlarmApp */,
-				91AC95EF261B973E000329DC /* Fonts */,
-				91AC95FB261B97C6000329DC /* Sounds */,
 				9148094B2620EEC50077700B /* Notifications */,
-				9148094A2620EE820077700B /* Styles */,
 				91AC95D2261B9642000329DC /* Custom */,
 				91AC95F3261B9781000329DC /* Models */,
 				91AC95E7261B96F3000329DC /* Extensions */,
@@ -351,6 +354,7 @@
 		91AC9609261B983D000329DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9148094A2620EE820077700B /* Styles */,
 				91AC960E261B98C9000329DC /* ContentView.swift */,
 				91AC960A261B987A000329DC /* MainPageView */,
 				91AC960D261B98A0000329DC /* User */,
@@ -438,6 +442,23 @@
 			path = LabelView;
 			sourceTree = "<group>";
 		};
+		E5107CCC26555FC1007732C5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				91AC95FB261B97C6000329DC /* Sounds */,
+				91AC95EF261B973E000329DC /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E581C1F42648539100D43573 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				E581C1F5264853BA00D43573 /* Parsing.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -495,6 +516,7 @@
 				E5BC87C3261E205E000C91F4 /* FirebaseAuth */,
 				E5BC87C5261E205E000C91F4 /* FirebaseFirestore */,
 				E5BC87C7261E205E000C91F4 /* FirebaseDatabase */,
+				E581C1F226484E1B00D43573 /* SwiftSoup */,
 			);
 			productName = PolyAlarmApp;
 			productReference = 91AC95BB261B953E000329DC /* PolyAlarmApp.app */;
@@ -534,6 +556,7 @@
 			mainGroup = 91AC95B2261B953E000329DC;
 			packageReferences = (
 				E5BC87C0261E205E000C91F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E581C1F126484E1B00D43573 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = 91AC95BC261B953E000329DC /* Products */;
 			projectDirPath = "";
@@ -610,6 +633,7 @@
 				91AC961A261B9920000329DC /* SettingsView.swift in Sources */,
 				9148093C2620E2FA0077700B /* Application+Extensions.swift in Sources */,
 				91AC9627261B99EF000329DC /* AlarmAddView.swift in Sources */,
+				E581C1F6264853BA00D43573 /* Parsing.swift in Sources */,
 				914809502620EF8A0077700B /* UserData.swift in Sources */,
 				914809472620ED670077700B /* TrustNumber.swift in Sources */,
 				91AC9617261B9908000329DC /* CustomBackgroundView.swift in Sources */,
@@ -951,6 +975,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E581C1F126484E1B00D43573 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
 		E5BC87C0261E205E000C91F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -962,6 +994,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E581C1F226484E1B00D43573 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E581C1F126484E1B00D43573 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
 		E5BC87C1261E205E000C91F4 /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E5BC87C0261E205E000C91F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

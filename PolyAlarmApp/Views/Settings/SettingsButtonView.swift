@@ -16,6 +16,7 @@ struct SettingsButtonView: View {
     var body: some View {
         VStack {
             Button(action: {
+                //gettingURL()
                 self.showingPopUpView.toggle()
             }, label: {
                 RoundedRectangle(cornerRadius: 10)
